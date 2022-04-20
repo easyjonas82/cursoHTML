@@ -26,3 +26,27 @@ html {                      /*Se introducira al inicio del CSS para darle format
     font-size: 1.5rem;
     color: red;
 }
+
+.nav{
+    background-color: var(--secundario);
+    width: 100%
+}
+
+.nav_principal{
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 20rem;
+}
+
+.nav_principal a{
+    text-decoration: none;
+    color: var(--blanco);
+    font-weight: bold;
+    padding: .5rem;
+}
+
+.nav_principal a:hover{
+    color: black;
+    background-color: var(--primario);
+}
