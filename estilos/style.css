@@ -26,3 +26,25 @@ html {                      /*Se introducira al inicio del CSS para darle format
     font-size: 1.5rem;
     color: red;
 }
+
+.imagen_principal{
+    position: relative;
+   
+   
+}
+
+.back_img{
+    position: absolute;
+    background-color: rgba(0,0,0,0);
+    background-image: url(/img/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 45rem;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    
+}
