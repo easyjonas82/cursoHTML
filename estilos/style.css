@@ -49,9 +49,16 @@ html {                      /*Se introducira al inicio del CSS para darle format
     justify-content: center;
     width: 100%;
     color: white;
-   
-    
-    
-   
-    
+
 }
+
+.icon{
+    display: flex;
+       
+}
+
+.titulo_icon{
+    padding-top: 2rem;
+    padding-left: 1rem;
+}
+
