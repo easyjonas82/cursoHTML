@@ -32,3 +32,16 @@ html {                      /*Se introducira al inicio del CSS para darle format
     margin: auto;
 }
 
+.boton{
+    text-align: center;
+    background-color: var(--secundario);
+    margin-left: 60rem;
+    padding: 1rem 3rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: var(--blanco);
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 1rem;
+   
+}
