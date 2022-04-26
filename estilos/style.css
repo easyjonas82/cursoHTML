@@ -37,4 +37,7 @@ html {                      /*Se introducira al inicio del CSS para darle format
 
 body{
     background-image: linear-gradient(to top, #9bbddf 0%, var(--blanco) 100%);
+    /*background-image: linear-gradient(to left, #9bbddf 0%, var(--blanco) 100%);
+    background-image: linear-gradient(to right, #9bbddf 0%, var(--blanco) 100%);
+    background-image: linear-gradient(to botton, #9bbddf 0%, var(--blanco) 100%);*/
 }
