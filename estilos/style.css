@@ -27,24 +27,66 @@ html {                      /*Se introducira al inicio del CSS para darle format
     color: red;
 }
 
-.contenedor{
+.contenedor-servicios{
     width: 100rem;
     margin: auto;
+   text-align: center;
+    background-color: rgb(245, 245, 234);
+    -webkit-box-shadow: 2px 6px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 6px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 2px 6px 5px 0px rgba(0,0,0,0.75);
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin-top: 5rem;
+
+       
+}
+    
+
+
+body{
+    background-image: linear-gradient(to top, #9bbddf 0%, var(--blanco) 100%);
+    /*background-image: linear-gradient(to left, #9bbddf 0%, var(--blanco) 100%);
+    background-image: linear-gradient(to right, #9bbddf 0%, var(--blanco) 100%);
+    background-image: linear-gradient(to botton, #9bbddf 0%, var(--blanco) 100%);*/
 }
 
-.boton{
-    text-align: center;
+.nav-background{
     background-color: var(--secundario);
-    margin-left: 60rem;
-    padding: 1rem 3rem;
-    font-size: 1.5rem;
+    
+}
+
+.nav_principal{
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-around;
+   
+}
+
+.nav_principal a{
     text-decoration: none;
     color: var(--blanco);
     font-weight: bold;
-    text-transform: uppercase;
-    border-radius: 1rem;
+    padding: .5rem;
+}
+
+.nav_principal a:hover{
+    color: black;
+    background-color: var(--primario);
+}
+
+.imagen_principal{
+    position: relative;
+    background-image: url(/img/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 45rem;
+    font-size: 2rem;
+    
    
 }
+
 .back_img{
     position: absolute;
     background: rgba(0,0,0,.7);
@@ -67,5 +109,173 @@ html {                      /*Se introducira al inicio del CSS para darle format
 .titulo_icon{
     padding-top: 2rem;
     padding-left: 1rem;
+}
+
+.boton{
+    text-align: center;
+    background-color: var(--secundario);
+    margin-left: 60rem;
+    padding: 1rem 3rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: var(--blanco);
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 1rem;
+   
+}
+
+h1{
+    margin-top: 5rem;
+    
+}
+
+.texto{
+    font-size: 1.5rem;
+    line-height: 2;
+}
+
+.aplicacion{
+   background-color: var(--primario);
+   width: 15rem;
+   height: 15rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 50%;
+
+    
+    
+}
+
+.servicios{
+    display: grid;
+   /* grid-template-columns: 1fr 1fr 1fr;*/
+   /* grid-template-columns: 33.3% 33.3% 33.3%;*/
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5rem;
+    
+   
+   
+    /* grid-template-rows: 200px 800px;  Damos espacio hacia abajo osea en el rows*/
+
+    /*  grid: 200px 800px / 300px 300px Se puede simplificar colocando primero los rows y despues las columnas  */
+
+}
+
+.icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+.contenedor-fomrulario{
+    width: 100rem;
+    margin: 0 auto;
+    background-color: rgb(180, 247, 225);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    padding: 1rem 1rem;
+    
+}
+
+.contenedor-formulario h1{
+    color: red;
+    text-align: center;
+}
+
+.formulario{
+    width: min(60rem, 100%) ;
+    background-color: #757575;
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 1rem;
+    margin-bottom: 5rem;
+}
+
+.formulario fieldset{
+    border: none;
+}
+
+.formulario legend{
+    font-size: 1.8rem;
+    width: 50rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    color: var(--primario);
+    margin-left: 4rem;
+    
+}
+
+.contenedor-campos{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    column-gap: 1rem;
+    grid-template-rows: auto auto 20rem;
+}
+
+.campo:nth-child(3),
+.campo:nth-child(4){
+    grid-column: 1 / 3;
+}
+
+.campo{
+    margin-bottom: 1rem;
+}
+
+.campo label{
+    display: block;
+    color: var(--blanco);
+    font-weight: bold;
+    margin-bottom: .5rem;
+    font-size: 1.5rem;
+}
+
+.input-text{
+    width: 100%;
+    border: none;
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+    
+
+}
+
+.boton-enviar{
+    
+    text-align: center;
+    background-color: var(--secundario);
+    margin-left: 42rem;
+    padding: 1rem 3rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: var(--blanco);
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 1rem;
+    border: none;
+    margin-top: 3rem;
+       
+    
+}
+
+.boton-enviar:hover{
+    cursor: pointer;
+    background-color: rgba(6, 6, 247, 0.805);
+
+}
+
+.enviar{
+    display: flex;
+    justify-content: end;
+}
+
+.campo textarea{
+    height: 20rem;
 }
 
